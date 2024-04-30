@@ -52,7 +52,7 @@ public class JsonFileReader {
                 break;
             }
         }
-        System.out.println(result.getName() + " $" + maxSpending);
+        System.out.println("the person who spends the most: " + result.getName() + " $" + maxSpending);
     }
 
     private static void getCityBySpending(){
@@ -79,7 +79,7 @@ public class JsonFileReader {
                 break;
             }
         }
-        System.out.println(result.getCity() + " " + maxCount);
+        System.out.println("the city with the most orders is: " + result.getCity() + " with " + maxCount + " orders");
 
     }
     private static void parseJson(String fileName) throws IOException, ParseException {
